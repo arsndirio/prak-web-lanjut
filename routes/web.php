@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
-
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,5 +18,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/profile/{nama}/{kelas}/{npm}',
+// Route::get('/profile',
+// [ProfileController::class, 'profile']); 
+
+Route::get('/profile/{nama}/{kelas}/{npm}', 
 [ProfileController::class, 'profile']); 
+
+Route::get('/user/profile', [UserController::class, 
+'profile']); 
