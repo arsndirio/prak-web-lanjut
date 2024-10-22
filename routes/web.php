@@ -24,5 +24,5 @@ Route::get('/', function () {
 Route::get('/profile/{nama}/{kelas}/{npm}', 
 [ProfileController::class, 'profile']); 
 
-Route::get('/user/profile', [UserController::class, 
-'profile']); 
+// Route::get('/user/profile', [UserController::class, 
+// 'profile']); 
